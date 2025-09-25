@@ -1,0 +1,18 @@
+{
+    "items": [
+        {"id":"espresso", "name":"Espresso", "origin":"Italy (method)", "caffeine_mg":63, "notes":"Short, intense, base for many drinks.", "image":"assets/espresso.png"},
+        {"id":"americano", "name":"Americano", "origin":"Italy/USA", "caffeine_mg":95, "notes":"Espresso + hot water, milder taste.", "image":"assets/americano.png"},
+        {"id":"cappuccino", "name":"Cappuccino", "origin":"Italy", "caffeine_mg":75, "notes":"Espresso + milk + foam, balanced.", "image":"assets/cappuccino.png"},
+        {"id":"latte", "name":"Latte", "origin":"Italy", "caffeine_mg":75, "notes":"More milk, creamy and mild.", "image":"assets/latte.png"},
+        {"id":"coldbrew", "name":"Cold Brew", "origin":"USA (method)", "caffeine_mg":150, "notes":"Cold extraction, smooth, low acidity.", "image":"assets/coldbrew.png"},
+        {
+            "id": "mocha",
+            "name": "Mocha",
+            "origin": "Yemen/Italy",
+            "caffeine_mg": 80,
+            "notes": "Espresso with chocolate and milk; sweet and rich.",
+            "image":"assets/mocha.png"
+          }
+        
+    ]
+}

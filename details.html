@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Hub - Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+  <header class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="assets/logo.png" alt="Coffee Hub logo" class="brand-logo">
+        <span class="brand-name">Coffee Hub</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav id="mainNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
+          <li class="nav-item"><a class="nav-link active" href="details.html">Details</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--MAIN-->
+  <main class="container py-4">
+    <div id="detailsState" class="text-center text-muted py-4">Loading...</div>
+
+    <article id="detailsCard" class="details card border-0 shadow-sm mx-auto" style="display:none;">
+        <div class="card-body">
+            <div class="details-flex">
+                <img id="coffeeImage" src="" alt="" class="details-img d-none">
+                <div class="details-text">
+                    <h1 id="coffeeName" class="h3 mb-2"></h1>
+                    <div class="text-muted mb-3" id="coffeeOrigin"></div>
+
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="badge badge-caf" id="coffeeCaffeine"></span>
+                        <span class="badge text-bg-light" id="coffeeId"></span>
+                    </div>
+                    <p id="coffeeNotes" class="mb-4"></p>
+                    <div class="d-flex gap-2 flex-wrap">
+                        <a href="catalog.html" class="btn btn-brand-outline">Back to catalog</a>
+                        <a id="tryAnother" href="#" class="btn btn-brand">Try another</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+  </main>
+  <!-- FOOTER -->
+  <footer class="footer mt-5">
+    <div class="container d-flex justify-content-between flex-wrap gap-2 py-3">
+      <span>© 2025 Coffee Hub</span>
+      <span class="text-muted">EN / SR</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/details.js"></script>
+</body>
+</html>
