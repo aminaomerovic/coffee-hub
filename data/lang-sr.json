@@ -1,0 +1,68 @@
+{
+    "navHome": "Početna",
+    "navContact": "Kontakt",
+    "navCatalog": "Katalog",
+    "navDetails": "Detalji",
+    "navLogin": "Prijava",
+    "navLogout": "Odjava",
+    "navAbout": "O nama",
+  
+    "homeUpper": "SVE U VEZI",
+    "homeLower": "kafe",
+    "homeSubtext": "Najpopularnije kafe na svetu – poreklo, ukus, kofein.",
+    "homeLoginBtn": "Prijavi se",
+    "homeLearnBtn": "Saznaj više",
+  
+    "contactHeadline": "Kontakt",
+    "contactText": "Popunite polja ispod. Na fokus se prikazuje kratka pomoć, a pri grešci crvena poruka.",
+    "formName": "Ime i prezime",
+    "formEmail": "Email adresa",
+    "formMessage": "Poruka",
+    "formSend": "Pošalji",
+    "formBack": "Nazad na početnu",
+    "hintName": "Unesi puno ime (npr. Dina Bećirović)",
+    "errName": "Ime nije ispravno.",
+    "hintEmail": "Unesi validan email (npr. dina@mail.com)",
+    "errEmail": "Email nije ispravan.",
+    "hintMsg": "Najmanje 10 karaktera",
+    "errMsg": "Poruka je prekratka.",
+    "phName": "Dina Bećirović",
+    "phEmail": "dina@mail.com",
+    "phMsg": "Napiši najmanje 10 karaktera...",
+  
+    "catalogHeadline": "Katalog",
+    "catalogText": "Najpopularnije kafe na svetu — poreklo, ukus i sadržaj kofeina.",
+    "searchLabel": "Pretraga",
+    "searchPlaceholder": "Pretraži kafe (naziv/poreklo)",
+
+    "detailsBack": "Nazad na katalog",
+    "detailsTry": "Probaj drugu",
+    "loading": "Učitavanje...",
+    "detailsNoCoffee": "Nije izabrana kafa.",
+    "detailsNotFound": "Kafa nije pronađena.",
+    "detailsError": "Došlo je do greške. Pokušaj ponovo.",
+    "caffeineUnit": "mg kofeina",
+    "idLabel": "ID",
+  
+    "successHeadline": "Poruka je uspešno poslata!",
+    "successText": "Hvala što ste nas kontaktirali. Odgovorićemo uskoro.",
+    "successBack": "Nazad na početnu",
+
+    "loginTitle": "Prijava",
+    "loginSubtitle": "Unesi email (ili korisničko ime) i lozinku.",
+    "labelLoginId": "Email ili korisničko ime",
+    "labelPassword": "Lozinka",
+    "phLoginId": "dina@mail.com ili dina",
+    "phPassword": "••••••••",
+    "loginBtn": "Prijavi se",
+    "errUser": "Unesi ispravan email ili korisničko ime.",
+    "errPass": "Lozinka je prekratka.",
+    "errAuth": "Pogrešni podaci. Pokušaj ponovo.",
+  
+    "aboutHeadline": "O Coffee Hub-u",
+  "aboutP1": "Coffee Hub je jednostavan projekat kreiran u edukativne svrhe. Naš cilj je da prikažemo najpopularnije kafe na svetu, njihovo poreklo, ukuse i nivo kofeina. Projekat je urađen uz HTML, CSS, JavaScript i Bootstrap kako bi se demonstrirao responzivan dizajn i osnovna interaktivnost.",
+  "aboutP2": "Ovaj sajt je napravljen kao studentski projekat na Fakultetu za softversko inženjerstvo. Spaja kreativnost, kodiranje i ljubav prema kafi na jednom mestu.",
+  
+    "footerLang": "SR"
+  }
+  

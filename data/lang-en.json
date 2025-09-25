@@ -1,0 +1,68 @@
+{
+    "navHome": "Home",
+    "navContact": "Contact",
+    "navCatalog": "Catalog",
+    "navDetails": "Details",
+    "navLogin": "Login",
+    "navLogout": "Logout",
+    "navAbout": "About",
+  
+    "homeUpper": "IT'S ALL ABOUT",
+    "homeLower": "coffee",
+    "homeSubtext": "The world’s most popular coffees – origin, taste, caffeine.",
+    "homeLoginBtn": "Log in",
+    "homeLearnBtn": "Learn more",
+  
+    "contactHeadline": "Contact",
+    "contactText": "Fill in the fields below. On focus a short hint is shown, and on error a red message appears.",
+    "formName": "Full name",
+    "formEmail": "Email address",
+    "formMessage": "Message",
+    "formSend": "Send",
+    "formBack": "Back to home",
+    "hintName": "Enter your full name (e.g. Dina Becirovic)",
+    "errName": "The name is not valid.",
+    "hintEmail": "Enter a valid email (e.g. dina@mail.com)",
+    "errEmail": "The email is not valid.",
+    "hintMsg": "At least 10 characters",
+    "errMsg": "The message is too short.",
+    "phName": "Dina Becirovic",
+    "phEmail": "dina@mail.com",
+    "phMsg": "Write at least 10 characters...",
+  
+    "catalogHeadline": "Catalog",
+    "catalogText": "Most popular coffees in the world — origin, taste and caffeine content.",
+    "searchLabel": "Search",
+    "searchPlaceholder": "Search coffees (name/origin)",
+  
+    "detailsBack": "Back to catalog",
+    "detailsTry": "Try another",
+    "loading": "Loading...",
+    "detailsNoCoffee": "No coffee selected.",
+    "detailsNotFound": "Coffee not found.",
+    "detailsError": "An error occurred. Please try again.",
+    "caffeineUnit": "mg caffeine",
+    "idLabel": "id",
+  
+    "successHeadline": "Message sent successfully!",
+    "successText": "Thank you for contacting us. We will reply soon.",
+    "successBack": "Back to home",
+
+    "loginTitle": "Login",
+    "loginSubtitle": "Enter your email (or username) and password.",
+    "labelLoginId": "Email or username",
+    "labelPassword": "Password",
+    "phLoginId": "dina@mail.com or dina",
+    "phPassword": "••••••••",
+    "loginBtn": "Log in",
+    "errUser": "Enter a valid email or username.",
+    "errPass": "Password is too short.",
+    "errAuth": "Incorrect credentials. Please try again.",
+  
+    "aboutHeadline": "About Coffee Hub",
+    "aboutP1": "Coffee Hub is a simple project created for educational purposes. Our goal is to showcase the most popular coffees in the world, their origins, flavors, and caffeine levels. The project was designed with HTML, CSS, JavaScript, and Bootstrap to demonstrate responsive web design and basic interactivity.",
+    "aboutP2": "This website was built as a student project at the Faculty of Software Engineering. It combines creativity, coding, and passion for coffee into one place.",
+  
+    "footerLang": "EN"
+  }
+  

@@ -20,56 +20,61 @@
       </button>
       <nav id="mainNav" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link requires-auth" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link requires-auth" href="catalog.html">Catalog</a></li>
-          <li class="nav-item"><a class="nav-link requires-auth" href="details.html">Details</a></li>
-          <li class="nav-item"><a class="nav-link active" id="loginLink" href="login.html">Login</a></li>
-          <li class="nav-item d-none"><a class="nav-link" id="logoutLink" href="#">Logout</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="navHome">Home</a></li>
+        
+          <li class="nav-item"><a class="nav-link requires-auth" href="contact.html" data-i18n="navContact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link requires-auth" href="catalog.html" data-i18n="navCatalog">Catalog</a></li>
+          <li class="nav-item"><a class="nav-link requires-auth" href="details.html" data-i18n="navDetails">Details</a></li>
+        
+          <li class="nav-item"><a class="nav-link active" id="loginLink" href="login.html" data-i18n="navLogin">Login</a></li>
+          <li class="nav-item d-none"><a class="nav-link" id="logoutLink" href="#" data-i18n="navLogout">Logout</a></li>
           <li class="nav-item d-none"><span class="nav-link" id="userName"></span></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        </ul>        
+        
+          <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="navAbout">About</a></li>
+        </ul>             
       </nav>
     </div>
   </header>
   <!--Main-->
   <main class="login-container">
-    <h1 class="login-title">Login</h1>
-    <p class="login-subtitle">Enter your email (or username) and password.</p>
+    <h1 class="login-title" data-i18n="loginTitle">Login</h1>
+    <p class="login-subtitle" data-i18n="loginSubtitle">Enter your email (or username) and password.</p>
   
     <div class="login-box">
       <form id="loginForm" novalidate>
         <div class="mb-3">
-          <label for="username" class="form-label">Email or username</label>
-          <input type="text" id="username" class="form-control" placeholder="dina@mail.com or dina">
-          <div class="form-error" id="err-user" hidden>Enter a valid email or username.</div>
+          <label for="username" class="form-label" data-i18n="labelLoginId">Email or username</label>
+          <input type="text" id="username" class="form-control" data-i18n-placeholder="phLoginId" placeholder="dina@mail.com or dina">
+          <div class="form-error" id="err-user" hidden data-i18n="errUser">Enter a valid email or username.</div>
         </div>
   
         <div class="mb-3">
-          <label for="password" class="form-label">Password</label>
-          <input type="password" id="password" class="form-control" placeholder="••••••••">
-          <div class="form-error" id="err-pass" hidden>Password is too short.</div>
+          <label for="password" class="form-label" data-i18n="labelPassword">Password</label>
+          <input type="password" id="password" class="form-control" data-i18n-placeholder="phPassword" placeholder="••••••••">
+          <div class="form-error" id="err-pass" hidden data-i18n="errPass">Password is too short.</div>
         </div>
   
-        <div class="alert alert-danger py-2 px-3" id="err-auth" role="alert" hidden>
+        <div class="alert alert-danger py-2 px-3" id="err-auth" role="alert" hidden data-i18n="errAuth">
           Incorrect credentials. Please try again.
         </div>
   
-        <button id="loginBtn" class="btn btn-brand w-100 mb-2" type="submit">Log in</button>
-        <a href="index.html" class="btn btn-brand-outline w-100">Back to home</a>
+        <button id="loginBtn" class="btn btn-brand w-100 mb-2" type="submit" data-i18n="loginBtn">Log in</button>
+        <a href="index.html" class="btn btn-brand-outline w-100" data-i18n="formBack">Back to home</a>
       </form>
     </div>
   </main>
   
+  
   <footer class="footer mt-5">
     <div class="container d-flex justify-content-between flex-wrap gap-2 py-3">
       <span>© 2025 Coffee Hub</span>
-      <span class="text-muted">EN / SR</span>
+      <span id="langSwitch" style="cursor:pointer" data-i18n="footerLang">EN</span>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/auth.js"></script>
+  <script src="js/lang.js"></script>
   <script src="js/login.js"></script>
   <script>
     (function(){

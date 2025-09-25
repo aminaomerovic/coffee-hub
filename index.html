@@ -27,15 +27,18 @@
         <!--Navigacija-->
         <nav id="mainNav" class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link requires-auth" href="contact.html">Contact</a></li>
-                <li class="nav-item"><a class="nav-link requires-auth" href="catalog.html">Catalog</a></li>
-                <li class="nav-item"><a class="nav-link requires-auth" href="details.html">Details</a></li>
-                <li class="nav-item"><a class="nav-link" id="loginLink" href="login.html">Login</a></li>
-                <li class="nav-item d-none"><a class="nav-link" id="logoutLink" href="#">Logout</a></li>
+                <li class="nav-item"><a class="nav-link active" href="index.html" data-i18n="navHome">Home</a></li>
+              
+                <li class="nav-item"><a class="nav-link requires-auth" href="contact.html" data-i18n="navContact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link requires-auth" href="catalog.html" data-i18n="navCatalog">Catalog</a></li>
+                <li class="nav-item"><a class="nav-link requires-auth" href="details.html" data-i18n="navDetails">Details</a></li>
+              
+                <li class="nav-item"><a class="nav-link" id="loginLink" href="login.html" data-i18n="navLogin">Login</a></li>
+                <li class="nav-item d-none"><a class="nav-link" id="logoutLink" href="#" data-i18n="navLogout">Logout</a></li>
                 <li class="nav-item d-none"><span class="nav-link" id="userName"></span></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-              </ul>              
+              
+                <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="navAbout">About</a></li>
+              </ul>          
         </nav>
     </div>
  </header>
@@ -50,15 +53,15 @@
 
         <div class="col-12 col-lg-7 order-1 order-lg-2">
             <h1 class="hero-title">
-                <span class="upper">IT'S ALL ABOUT</span>
-                <span class="lower">coffee</span>
-            </h1>
-            <p class="hero-sub">The world’s most popular coffees – origin, taste, caffeine.</p>
-
-            <div class="hero-actions d-flex gap-2 flex-wrap">
-                <a class="btn btn-brand btn-lg" href="catalog.html">Open catalog</a>
-                <a class="btn btn-brand-outline btn-lg" href="about.html">Learn more</a>
-            </div>
+                <span class="upper" data-i18n="homeUpper">IT'S ALL ABOUT</span>
+                <span class="lower" data-i18n="homeLower">coffee</span>
+              </h1>
+              <p class="hero-sub" data-i18n="homeSubtext">The world’s most popular coffees – origin, taste, caffeine.</p>
+              
+              <div class="hero-actions d-flex gap-2 flex-wrap">
+                <a class="btn btn-brand btn-lg" href="login.html" data-i18n="homeLoginBtn">Log in</a>
+                <a class="btn btn-brand-outline btn-lg" href="about.html" data-i18n="homeLearnBtn">Learn more</a>
+              </div>              
         </div>    
         </div>
     </section>
@@ -67,12 +70,13 @@
  <!--FOOTER-->
  <footer class="footer mt-5">
     <div class="container d-flex justify-content-between flex-wrap gap-2 py-3">
-        <span>© 2025 Coffee Hub</span>
-        <span class="text-muted">EN / SR</span>
+      <span>© 2025 Coffee Hub</span>
+      <span id="langSwitch" style="cursor:pointer" data-i18n="footerLang">EN</span>
     </div>
- </footer>
+  </footer>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
  <script src="js/auth.js"></script>
+ <script src="js/lang.js"></script>
  <script>
     (function(){
       const nav = document.getElementById('mainNav');

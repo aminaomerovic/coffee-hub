@@ -43,8 +43,12 @@ function filterList(q){
 async function load(){
   try{
     showState('Loading…');
-    const res = await fetch('data/coffees.json');
-    if(!res.ok) throw new Error('Failed to load coffees.json');
+
+    const lang = localStorage.getItem('lang') || 'en';
+    const DATA_URL = `data/coffees-${lang}.json`;
+
+    const res = await fetch(DATA_URL);
+    if(!res.ok) throw new Error(`Failed to load ${DATA_URL}`);
     const data = await res.json();
     ALL = data.items || [];
     render(ALL);
