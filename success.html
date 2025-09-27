@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Hub - Sent</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Hub - Success</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
-        <div class="container">
-          <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-            <img src="assets/logo.png" alt="Coffee Hub logo" class="brand-logo">
-            <span class="brand-name">Coffee Hub</span>
-          </a>
-        </div>
-      </header>
+  <header class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="assets/logo.png" alt="Coffee Hub logo" class="brand-logo">
+        <span class="brand-name">Coffee Hub</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav id="mainNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="navHome">Home</a></li>
+          <li class="nav-item"><a class="nav-link requires-auth" href="contact.html" data-i18n="navContact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link requires-auth" href="catalog.html" data-i18n="navCatalog">Catalog</a></li>
+          <li class="nav-item"><a class="nav-link requires-auth" href="details.html" data-i18n="navDetails">Details</a></li>
+          <li class="nav-item"><a class="nav-link" id="loginLink" href="login.html" data-i18n="navLogin">Login</a></li>
+          <li class="nav-item d-none"><a class="nav-link" id="logoutLink" href="#">Logout</a></li>
+          <li class="nav-item d-none"><span class="nav-link" id="userName"></span></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="navAbout">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      <main class="container py-5 text-center">
-        <h1 class="mb-3" data-i18n="successHeadline">Message sent successfully!</h1>
-        <p class="text-muted mb-4" data-i18n="successText">Thank you for contacting us. We will reply soon.</p>
-        <a href="index.html" class="btn btn-brand" data-i18n="successBack">Back to home</a>
-      </main>
-            
-      <footer class="footer mt-5">
-        <div class="container d-flex justify-content-between flex-wrap gap-2 py-3">
-          <span>© 2025 Coffee Hub</span>
-          <span id="langSwitch" style="cursor:pointer" data-i18n="footerLang">EN</span>
-        </div>
-      </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="js/auth.js"></script>
-      <script src="js/lang.js"></script>
+  <main class="success-container">
+    <div class="success-box text-center shadow-sm">
+      <h1 data-i18n="successTitle">Message sent successfully!</h1>
+      <p data-i18n="successText">Thank you for contacting us. We will reply soon.</p>
+      <a href="index.html" class="btn btn-brand mt-3" data-i18n="successBack">Back to home</a>
+    </div>
+  </main>
+
+  <footer class="footer mt-5">
+    <div class="container d-flex justify-content-between flex-wrap gap-2 py-3">
+      <span>© 2025 Coffee Hub</span>
+      <span class="text-muted lang-switch">
+        <a href="#" data-setlang="en">EN</a> / <a href="#" data-setlang="sr">SR</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/lang.js"></script>
+  <script src="js/auth.js"></script>
 </body>
 </html>
